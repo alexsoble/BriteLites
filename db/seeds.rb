@@ -5,7 +5,7 @@ block.save
 end
 
 Window.destroy_all
-242.times do |w|
+484.times do |w|
 w = Window.new
 w.save
 end
