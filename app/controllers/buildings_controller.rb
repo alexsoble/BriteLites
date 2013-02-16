@@ -33,4 +33,14 @@ class BuildingsController < ApplicationController
 		end
 	end
 
+	def clear
+		
+		Window.all.each do |w|
+			w.status = false
+			w.save
+		end
+		
+		render 'show'
+	end
+	
 end
