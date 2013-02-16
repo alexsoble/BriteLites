@@ -1,0 +1,9 @@
+Merch Mart!
+<br><br>
+<% Window.all.each do |w| %>
+	<% if w.status == nil || w.status == false %>
+		<%= link_to image_tag('http://www.decodeunicode.org/en/data/glyph/196x196/25FD.gif', :width => 25), :controller => 'buildings', :action => 'update', :id => w.id %>
+	<% else %>
+		<%= link_to image_tag('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTso2e8RU18Yh-UdShsQva6OP8m72akdOef8wPzDLWe08MronS0', :width => 25), :controller => 'buildings', :action => 'update', :id => w.id %>
+	<% end %>
+<% end %>
