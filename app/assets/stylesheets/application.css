@@ -11,3 +11,25 @@
  *= require_self
  *= require_tree .
  */
+
+ /* gold */;
+  /* #c33  red */
+  /* #003 blue */
+  /* #ffc yellow */
+
+body {
+  background-color: #003;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+h1 {
+  font-family: 'Limelight', cursive;
+  color: #9cc;
+  &:hover {
+    color: #fc6;
+  }    
+}
+
